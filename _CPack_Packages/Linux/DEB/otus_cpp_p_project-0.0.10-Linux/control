@@ -4,6 +4,6 @@ Maintainer: example@example.com
 Package: otus_cpp_p_project
 Priority: optional
 Section: devel
-Version: 0.0.9
+Version: 0.0.10
 Installed-Size: 1393
 
