@@ -100,7 +100,8 @@ else ()
 endif()
 
 
-install(TARGETS otus_cpp_p_project RUNTIME DESTINATION bin)
+install(TARGETS halfSumFinder hsfTester hsfSearchOrderDemo
+    hsfInputGenerator hsfOutputVerifier RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
