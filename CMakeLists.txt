@@ -11,26 +11,26 @@ find_package (Boost REQUIRED
 include_directories(${Boost_INCLUDE_DIR})
 
 add_executable(halfSumFinder
+    halfSumFinder/main.cpp
     src/halfsumfinder.cpp
     src/set.cpp
-    main.cpp
 )
 add_executable(hsfTester
+    hsfTester/main.cpp
     src/halfsumfinder.cpp
     src/set.cpp
     util/gendata.cpp
-    main.cpp
 )
 add_executable(hsfSearchOrderDemo
+    hsfSearchOrderDemo/main.cpp
     src/set.cpp
-    main.cpp
 )
 add_executable(hsfInputGenerator
+    hsfInputGenerator/main.cpp
     util/gendata.cpp
-    main.cpp
 )
 add_executable(hsfOutputVerifier
-    main.cpp
+    hsfOutputVerifier/main.cpp
 )
 
 set_target_properties(halfSumFinder hsfTester hsfSearchOrderDemo
