@@ -16,7 +16,7 @@
 namespace po = boost::program_options;
 
 
-void printSets (const SetPVec &sln, const ValPosVec &data)
+void printSets (const SetPVec &sln, const ValPosVec &/*data*/)
 {
     int i = 1;
 
