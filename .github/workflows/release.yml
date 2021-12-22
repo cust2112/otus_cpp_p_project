@@ -15,7 +15,7 @@ jobs:
         with:
           submodules: true
       - name: Boost install
-        run: sudo apt-get update && sudo apt-get install libboost-program_options-dev -y
+        run: sudo apt-get update && sudo apt-get install libboost-program-options-dev -y
       - name: Project build
         run: |
           cmake . -DPATCH_VERSION=${{ github.run_number }}
