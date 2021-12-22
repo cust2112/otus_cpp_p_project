@@ -10,98 +10,98 @@ find_package (Boost REQUIRED
 )
 include_directories(${Boost_INCLUDE_DIR})
 
-add_executable(halfSumFinder
+add_executable(halfSumFinder.exe
     halfSumFinder/main.cpp
     src/halfsumfinder.cpp
     src/set.cpp
 )
-add_executable(hsfTester
+add_executable(hsfTester.exe
     hsfTester/main.cpp
     src/halfsumfinder.cpp
     src/set.cpp
     util/gendata.cpp
 )
-add_executable(hsfSearchOrderDemo
+add_executable(hsfSearchOrderDemo.exe
     hsfSearchOrderDemo/main.cpp
     src/set.cpp
 )
-add_executable(hsfInputGenerator
+add_executable(hsfInputGenerator.exe
     hsfInputGenerator/main.cpp
     util/gendata.cpp
 )
-add_executable(hsfOutputVerifier
+add_executable(hsfOutputVerifier.exe
     hsfOutputVerifier/main.cpp
 )
 
-set_target_properties(halfSumFinder hsfTester hsfSearchOrderDemo
-    hsfInputGenerator hsfOutputVerifier
+set_target_properties(halfSumFinder.exe hsfTester.exe hsfSearchOrderDemo.exe
+    hsfInputGenerator.exe hsfOutputVerifier.exe
  PROPERTIES
     CXX_STANDARD 11
     CXX_STANDARD_REQUIRED ON
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
-target_link_libraries(hsfTester PUBLIC
+target_link_libraries(hsfTester.exe PUBLIC
 	Boost::program_options
 )
-target_link_libraries(hsfInputGenerator PUBLIC
+target_link_libraries(hsfInputGenerator.exe PUBLIC
 	Boost::program_options
 )
 
 if (MSVC)
-    target_compile_options(halfSumFinder PRIVATE
+    target_compile_options(halfSumFinder.exe PRIVATE
         /W4
     )
 else ()
-    target_compile_options(halfSumFinder PRIVATE
+    target_compile_options(halfSumFinder.exe PRIVATE
         -Wall -Wextra -pedantic -Werror -Wno-sign-compare
 		-Wno-parentheses
     )
 endif()
 if (MSVC)
-    target_compile_options(hsfTester PRIVATE
+    target_compile_options(hsfTester.exe PRIVATE
         /W4
     )
 else ()
-    target_compile_options(hsfTester PRIVATE
+    target_compile_options(hsfTester.exe PRIVATE
         -Wall -Wextra -pedantic -Werror -Wno-sign-compare
 		-Wno-parentheses
     )
 endif()
 if (MSVC)
-    target_compile_options(hsfSearchOrderDemo PRIVATE
+    target_compile_options(hsfSearchOrderDemo.exe PRIVATE
         /W4
     )
 else ()
-    target_compile_options(hsfSearchOrderDemo PRIVATE
+    target_compile_options(hsfSearchOrderDemo.exe PRIVATE
         -Wall -Wextra -pedantic -Werror -Wno-sign-compare
 		-Wno-parentheses
     )
 endif()
 if (MSVC)
-    target_compile_options(hsfInputGenerator PRIVATE
+    target_compile_options(hsfInputGenerator.exe PRIVATE
         /W4
     )
 else ()
-    target_compile_options(hsfInputGenerator PRIVATE
+    target_compile_options(hsfInputGenerator.exe PRIVATE
         -Wall -Wextra -pedantic -Werror -Wno-sign-compare
 		-Wno-parentheses
     )
 endif()
 if (MSVC)
-    target_compile_options(hsfOutputVerifier PRIVATE
+    target_compile_options(hsfOutputVerifier.exe PRIVATE
         /W4
     )
 else ()
-    target_compile_options(hsfOutputVerifier PRIVATE
+    target_compile_options(hsfOutputVerifier.exe PRIVATE
         -Wall -Wextra -pedantic -Werror -Wno-sign-compare
 		-Wno-parentheses
     )
 endif()
 
 
-install(TARGETS halfSumFinder hsfTester hsfSearchOrderDemo
-    hsfInputGenerator hsfOutputVerifier RUNTIME DESTINATION bin)
+install(TARGETS halfSumFinder.exe hsfTester.exe hsfSearchOrderDemo.exe
+    hsfInputGenerator.exe hsfOutputVerifier.exe RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
