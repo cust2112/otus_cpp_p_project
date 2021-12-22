@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/halfSumFinder.exe.dir/halfSumFinder/main.cpp.o CMakeFiles/halfSumFinder.exe.dir/src/halfsumfinder.cpp.o CMakeFiles/halfSumFinder.exe.dir/src/set.cpp.o -o halfSumFinder.exe 

@@ -1,0 +1,5 @@
+/usr/bin/halfSumFinder.exe
+/usr/bin/hsfTester.exe
+/usr/bin/hsfSearchOrderDemo.exe
+/usr/bin/hsfInputGenerator.exe
+/usr/bin/hsfOutputVerifier.exe

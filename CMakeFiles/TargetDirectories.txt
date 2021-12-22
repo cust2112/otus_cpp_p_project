@@ -1,0 +1,13 @@
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/halfSumFinder.exe.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/hsfTester.exe.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/hsfSearchOrderDemo.exe.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/hsfInputGenerator.exe.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/hsfOutputVerifier.exe.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/package.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/package_source.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/edit_cache.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/rebuild_cache.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/list_install_components.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/install.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/install/local.dir
+/home/runner/work/otus_cpp_p_project/otus_cpp_p_project/CMakeFiles/install/strip.dir
